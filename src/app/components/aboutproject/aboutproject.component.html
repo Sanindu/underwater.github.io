@@ -1,0 +1,252 @@
+
+	<style>
+    body {
+      font-family: Roboto, sans-serif;
+      background-color: #2B2B2B;
+      margin: 0;
+      overflow-y: hidden;
+    }
+    /*body,
+    a {
+      color: transparent;
+    }*/
+    /*[hidden],
+    button,
+    canvas,
+    img,
+    input[type^=text],
+    select,
+    svg,
+    template {
+      display: none;
+    }*/
+    html,
+    body {
+      height: 100%;
+    }
+    html {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    body {
+      font-size: 1.000rem;
+      line-height: 1.333rem;
+      margin: 0;
+    }
+    .ripple {
+      width: 16.000rem;
+      height: 16.000rem;
+      position: absolute;
+      top: -3.333rem;
+      left: 25%;
+      margin: 0;
+    }
+    .ripple img {
+      display: block;
+      width: 16.000rem;
+      height: 17.000rem;
+
+    }
+    .loading {
+      font-size: 1.000rem;
+      line-height: 1.000rem;
+      font-family: sans-serif;
+      font-weight: 400;
+      color: #F44336;
+      position: absolute;
+      top: 4.133rem;
+      left: 25%;
+      margin: 0;
+    }
+    .quote p {
+      font-family: "PT Serif", serif;
+      font-weight: 400;
+    }
+    .intro h1 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .intro span {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      text-transform: none;
+    }
+    .footer p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+    }
+    @media only screen {
+      html {
+        font-size: 12px;
+      }
+    }
+    @media only screen and (max-width:40em) {
+      html {
+        font-size: 12px;
+      }
+    }
+    @media only screen and (min-width:40.063em) {
+      html {
+        font-size: 12px;
+      }
+    }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      html {
+        font-size: 15px;
+      }
+    }
+    @media only screen and (min-width:64.063em) {
+      html {
+        font-size: 15px;
+      }
+    }
+    @media only screen and (min-width:64.063em) and (max-width:90em) {
+      html {
+        font-size: 15px;
+      }
+    }
+    @media only screen and (min-width:90.063em) {
+      html {
+        font-size: 15px;
+      }
+    }
+    @media only screen and (min-width:90.063em) and (max-width:120em) {
+      html {
+        font-size: 18px;
+      }
+    }
+    @media only screen and (min-width:120.063em) {
+      html {
+        font-size: 18px;
+      }
+    }
+    /*!
+     * @see {@link https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.css}
+     */
+    .github-fork-ribbon{width:12.1em;height:12.1em;position:fixed;overflow:hidden;top:0;right:0;z-index:9999;pointer-events:none;font-size:13px;text-decoration:none;text-indent:-999999px;}.github-fork-ribbon.fixed{position:fixed;}.github-fork-ribbon:before,.github-fork-ribbon:after{position:absolute;display:block;width:15.38em;height:1.54em;top:3.23em;right:-3.23em;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}.github-fork-ribbon:before{content:"";padding:.38em 0;background-color:#a00;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,0.15)));background-image:-webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.15));background-image:-o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.15));background-image:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.15));-webkit-box-shadow:0 .15em .23em 0 rgba(0,0,0,0.5);box-shadow:0 .15em .23em 0 rgba(0,0,0,0.5);pointer-events:auto;}.github-fork-ribbon:after{content:attr(data-ribbon);color:#fff;font:700 1em "Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.54em;text-decoration:none;text-shadow:0 -.08em rgba(0,0,0,0.5);text-align:center;text-indent:0;padding:.15em 0;margin:.15em 0;border-width:.08em 0;border-style:dotted;border-color:#fff;border-color:rgba(255,255,255,0.7);}.github-fork-ribbon.left-top,.github-fork-ribbon.left-bottom{right:auto;left:0;}.github-fork-ribbon.left-bottom,.github-fork-ribbon.right-bottom{top:auto;bottom:0;}.github-fork-ribbon.left-top:before,.github-fork-ribbon.left-top:after,.github-fork-ribbon.left-bottom:before,.github-fork-ribbon.left-bottom:after{right:auto;left:-3.23em;}.github-fork-ribbon.left-bottom:before,.github-fork-ribbon.left-bottom:after,.github-fork-ribbon.right-bottom:before,.github-fork-ribbon.right-bottom:after{top:auto;bottom:3.23em;}.github-fork-ribbon.left-top:before,.github-fork-ribbon.left-top:after,.github-fork-ribbon.right-bottom:before,.github-fork-ribbon.right-bottom:after{-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);}
+  </style>
+  <noscript>
+    <link rel="stylesheet" href="https://englishextra.github.io/libs/john-locke/css/bundle.min.css" />
+  </noscript>
+
+
+<body>
+  <!-- images are hidden with display none in html and revealed with display block in css -->
+  <!-- canvas and source image width and height should be of the same aspect ratio, not neccessarily size -->
+  <!-- source svg for canvas painting should have width and height attributes -->
+  <!-- images are finally scaled in css -->
+  <!-- svg as image with svg-nosmil-img class if not supported is replaced with the data-fallback-src -->
+  <!-- animated svg as image with svg-smil-img class if not supported is replaced with the data-fallback-src -->
+  <!-- https://haltersweb.github.io/Accessibility/svg.html -->
+  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" focusable="false">
+    <defs>
+
+      <symbol id="ui-icon-Share" viewBox="0 0 96 96">
+        <path d="M65.128,53.997c0.442,0.286,0.843,0.622,1.201,1.006c0.358,0.384,0.661,0.804,0.908,1.259c0.247,0.456,0.436,0.938,0.566,1.446C67.934,58.216,68,58.729,68,59.25c0,0.859-0.167,1.667-0.498,2.422c-0.332,0.756-0.782,1.417-1.347,1.982c-0.566,0.566-1.228,1.016-1.982,1.347c-0.755,0.332-1.563,0.498-2.422,0.498c-1.198,0-2.304-0.318-3.321-0.957c-1.498,1.132-3.142,1.992-4.932,2.578C51.708,67.707,49.875,68,48,68s-3.708-0.293-5.498-0.878c-1.791-0.587-3.434-1.446-4.932-2.578c-1.016,0.638-2.122,0.957-3.32,0.957c-0.859,0-1.667-0.167-2.422-0.498c-0.756-0.332-1.417-0.782-1.983-1.347c-0.566-0.566-1.016-1.228-1.347-1.982C28.166,60.917,28,60.109,28,59.25c0-0.521,0.065-1.035,0.196-1.543c0.131-0.508,0.319-0.989,0.567-1.446c0.248-0.456,0.55-0.876,0.908-1.259s0.758-0.719,1.201-1.007c-0.131-0.586-0.224-1.168-0.283-1.748c-0.059-0.58-0.088-1.161-0.088-1.747c0-1.797,0.271-3.538,0.811-5.224c0.541-1.686,1.302-3.248,2.285-4.688s2.164-2.712,3.545-3.818c1.381-1.107,2.917-1.979,4.609-2.618c0.013-0.847,0.186-1.644,0.517-2.392c0.332-0.749,0.782-1.399,1.347-1.953c0.566-0.553,1.228-0.993,1.983-1.318C46.353,28.163,47.154,28,48,28s1.647,0.163,2.403,0.488c0.756,0.326,1.416,0.765,1.983,1.318c0.567,0.553,1.016,1.204,1.347,1.953s0.504,1.546,0.517,2.392c1.692,0.638,3.229,1.511,4.609,2.618c1.38,1.107,2.562,2.379,3.545,3.818s1.744,3.002,2.285,4.688c0.54,1.686,0.811,3.427,0.811,5.224c0,0.586-0.029,1.169-0.088,1.748C65.353,52.827,65.258,53.41,65.128,53.997z M48,30.5c-0.521,0-1.008,0.097-1.465,0.293c-0.456,0.196-0.853,0.462-1.191,0.801s-0.606,0.736-0.801,1.192c-0.196,0.455-0.293,0.943-0.293,1.464s0.097,1.008,0.293,1.465c0.196,0.457,0.463,0.853,0.801,1.192c0.338,0.338,0.736,0.606,1.191,0.801C46.991,37.903,47.479,38,48,38s1.008-0.097,1.465-0.293c0.456-0.196,0.853-0.463,1.191-0.801c0.338-0.338,0.606-0.736,0.801-1.192c0.196-0.456,0.293-0.943,0.293-1.465c0-0.522-0.097-1.009-0.293-1.465c-0.196-0.457-0.463-0.853-0.801-1.192c-0.338-0.338-0.736-0.606-1.191-0.801C49.008,30.597,48.521,30.5,48,30.5z M30.5,59.25c0,0.521,0.097,1.008,0.293,1.465c0.196,0.457,0.462,0.853,0.801,1.191s0.736,0.606,1.192,0.801C33.241,62.902,33.729,63,34.25,63s1.008-0.097,1.465-0.293c0.457-0.196,0.853-0.463,1.192-0.801c0.338-0.338,0.606-0.736,0.801-1.191C37.903,60.259,38,59.771,38,59.25s-0.097-1.008-0.293-1.465c-0.196-0.456-0.463-0.853-0.801-1.191c-0.338-0.338-0.736-0.606-1.192-0.801c-0.455-0.196-0.943-0.293-1.464-0.293s-1.009,0.097-1.465,0.293c-0.457,0.196-0.853,0.463-1.192,0.801c-0.338,0.338-0.606,0.736-0.801,1.191C30.597,58.241,30.5,58.729,30.5,59.25z M48,65.5c1.536,0,3.037-0.232,4.502-0.693c1.465-0.463,2.829-1.137,4.092-2.021c-0.352-0.522-0.622-1.084-0.811-1.689c-0.188-0.606-0.283-1.221-0.283-1.846c0-0.859,0.167-1.667,0.498-2.422c0.332-0.756,0.782-1.416,1.347-1.983c0.567-0.567,1.228-1.016,1.983-1.347C60.083,53.167,60.891,53,61.75,53c0.169,0,0.339,0.007,0.507,0.019c0.168,0.013,0.339,0.033,0.508,0.059C62.922,52.219,63,51.359,63,50.5c0-1.523-0.218-2.992-0.654-4.404c-0.436-1.412-1.054-2.721-1.856-3.926c-0.801-1.204-1.771-2.279-2.91-3.222c-1.139-0.943-2.412-1.709-3.818-2.295c-0.234,0.573-0.55,1.097-0.948,1.572c-0.397,0.476-0.849,0.882-1.358,1.221c-0.507,0.338-1.054,0.598-1.641,0.782C49.231,40.408,48.625,40.5,48,40.5s-1.231-0.092-1.816-0.273c-0.587-0.183-1.132-0.443-1.641-0.782c-0.508-0.338-0.961-0.746-1.358-1.221c-0.397-0.476-0.713-0.999-0.948-1.573c-1.407,0.586-2.678,1.352-3.818,2.295c-1.139,0.943-2.109,2.018-2.91,3.222c-0.801,1.204-1.419,2.513-1.856,3.926C33.219,47.508,33,48.977,33,50.5c0,0.859,0.078,1.719,0.234,2.578c0.938-0.157,1.846-0.104,2.724,0.157s1.654,0.681,2.324,1.259c0.671,0.579,1.208,1.279,1.611,2.099c0.405,0.821,0.607,1.706,0.607,2.657c0,0.625-0.094,1.241-0.283,1.846c-0.188,0.606-0.459,1.169-0.811,1.689c1.263,0.886,2.627,1.559,4.092,2.021C44.963,65.268,46.464,65.5,48,65.5z M61.75,63c0.522,0,1.008-0.097,1.465-0.293c0.457-0.196,0.853-0.463,1.191-0.801c0.337-0.338,0.606-0.736,0.801-1.191c0.195-0.456,0.293-0.944,0.293-1.465s-0.097-1.008-0.293-1.465c-0.196-0.457-0.462-0.853-0.801-1.191s-0.736-0.606-1.191-0.801c-0.456-0.196-0.943-0.293-1.465-0.293c-0.521,0-1.008,0.097-1.465,0.293c-0.457,0.196-0.853,0.463-1.191,0.801c-0.338,0.338-0.606,0.736-0.801,1.191C58.098,58.241,58,58.729,58,59.25s0.097,1.008,0.293,1.465c0.196,0.457,0.463,0.853,0.801,1.191c0.338,0.337,0.736,0.606,1.191,0.801C60.741,62.902,61.229,63,61.75,63z"></path>
+      </symbol>
+      <symbol id="ui-icon-Like" viewBox="0 0 96 96">
+        <path d="M64.25,43c0.508,0,0.99,0.098,1.445,0.293s0.856,0.462,1.201,0.801s0.615,0.736,0.811,1.191S68,46.229,68,46.75c0,0.417-0.065,0.814-0.195,1.191l-5,15c-0.13,0.378-0.313,0.726-0.547,1.045c-0.234,0.319-0.508,0.589-0.82,0.811s-0.654,0.394-1.025,0.518S59.654,65.5,59.25,65.5h-10c-2.331,0-4.577-0.449-6.738-1.348c-0.938-0.378-1.878-0.664-2.822-0.859S37.766,63,36.75,63H28V45.5h8.145c0.846,0,1.644-0.156,2.393-0.469s1.423-0.768,2.021-1.367l12.148-12.129c0.326-0.326,0.651-0.579,0.977-0.762s0.723-0.273,1.191-0.273c0.43,0,0.833,0.081,1.211,0.244s0.71,0.387,0.996,0.674s0.511,0.618,0.674,0.996S58,33.195,58,33.625c0,1.055-0.117,2.061-0.352,3.018s-0.579,1.904-1.035,2.842c-0.26,0.56-0.482,1.13-0.664,1.709S55.643,42.375,55.578,43H64.25z M59.25,63c0.26,0,0.501-0.078,0.723-0.234s0.378-0.365,0.469-0.625c0.065-0.182,0.186-0.534,0.361-1.055s0.387-1.149,0.635-1.885s0.521-1.543,0.82-2.422s0.599-1.768,0.898-2.666s0.589-1.774,0.869-2.627c0.28-0.853,0.531-1.621,0.752-2.305s0.397-1.243,0.527-1.68S65.5,46.815,65.5,46.75c0-0.339-0.124-0.632-0.371-0.879S64.589,45.5,64.25,45.5H53c0-0.69,0.016-1.331,0.049-1.924s0.098-1.169,0.195-1.729s0.238-1.12,0.42-1.68s0.423-1.152,0.723-1.777c0.365-0.755,0.641-1.527,0.83-2.314s0.283-1.605,0.283-2.451c0-0.182-0.059-0.332-0.176-0.449S55.057,33,54.875,33c-0.078,0-0.146,0.029-0.205,0.088l-0.166,0.166L42.336,45.441c-0.417,0.417-0.863,0.781-1.338,1.094s-0.98,0.579-1.514,0.801C38.443,47.779,37.329,48,36.145,48H30.5v12.5h6.25c2.318,0,4.564,0.449,6.738,1.348C45.363,62.616,47.284,63,49.25,63H59.25z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div id="container" class="wrapper">
+    <div class="hero animated duration-3s bounceInLeft"></div>
+    <div class="monolith animated duration-3s bounceInRight"></div>
+    <div id="scene" class="scene" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
+
+
+    </div>
+    <!-- <div class="john-locke animated duration-3s bounceIn">
+      <img src="https://englishextra.github.io/libs/john-locke/img/john-locke-500x645.png" class="animated duration-5s swing" alt="" />
+    </div> -->
+
+    <!-- <div class="signature animated duration-3s bounceInLeft">
+      <img src="https://englishextra.github.io/libs/john-locke/img/signature-600x244.png" class="" alt="animated duration-5s swing" />
+    </div> -->
+    <div class="signature animated duration-3s bounceInLeft">
+    <img src="../../../assets/images/bluewhale.png">
+    <img src="../../../assets/images/whale2.png">
+    </div>
+    <div class="intro animated duration-5s bounceInLeft" role="navigation" aria-label="Site">
+      <h1>
+        <a href="javascript:void(0);" rel="contents" title="">ISLE 1.0<br />UNDERWATER MONITORING &
+         <br /> RESEARCH PROJECT<br /><span>In collaboration with SEDS SL</span></a></h1>
+    </div>
+    <div class="quote animated bounceInDown  p-2">
+      <div class="col ">
+
+        <p class="text-white text-center">Click here to begin <code></code></p>
+        <div class="container-1">
+
+
+            <a  class="btn btn-one text-white" type="button" routerLink="/explore" routerLinkActive="true"> Explore</a>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+    <div class="guesture animated">
+      <svg class="swipeup animated duration-5s swing" role="img" focusable="false">
+        <use xlink:href="#swipeup"></use>
+      </svg>
+      <svg class="mousewheeldown animated duration-5s swing" role="img" focusable="false">
+        <use xlink:href="#mousewheeldown"></use>
+      </svg>
+    </div>
+    <div class="footer animated duration-3s bounceInDown">
+      <p>
+
+        <a href="javascript:void(0);" onclick="var a='mailto',b=':',c='',k='%40',q='',s='.',v='com';this.href=a+b+c+k+q+s+v;">&#169;&#160;2021&#160; Team ISLE 1.0</a>
+      </p>
+    </div>
+
+    <div class="phone animated duration-3s bounceInDown">
+      <svg class="animated duration-5s swing" role="img" focusable="false">
+        <use xlink:href="#phone"></use>
+      </svg>
+    </div>
+
+    <div class="arrow animated duration-3s bounceInDown">
+      <svg class="animated duration-5s swing" role="img" focusable="false">
+        <use xlink:href="#arrow"></use>
+      </svg>
+    </div>
+    <button class="btn-share-buttons" title="">
+      <svg class="ui-icon" role="img" focusable="false">
+        <use xlink:href="#ui-icon-Share"></use>
+      </svg>
+    </button>
+    <button class="btn-show-vk-like" title="">
+      <svg class="ui-icon" role="img" focusable="false">
+        <use xlink:href="#ui-icon-Like"></use>
+      </svg>
+    </button>
+
+    <div class="logo animated duration-3s bounceInLeft">
+      <a href="javascript:void(0);" rel="contents" title="">
+        <svg class="animated infinite pulse" role="img" focusable="false">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="qrcode"></div>
+    <div class="is-social" id="ya-share2" data-direction="horizontal" data-services="vkontakte,odnoklassniki,facebook,whatsapp,pocket"></div>
+    <div class="holder-vk-like is-social"><div class="vk-like" id="vk-like" data-apiid="4367728"></div></div>
+  </div>
+  <div class="ripple animated duration-5s">
+    <img src="https://englishextra.github.io/libs/john-locke/img/ripple-200x200.svg" data-fallback-src="https://englishextra.github.io/libs/john-locke/img/ripple-200x200.png" class="svg-smil-img" alt="" />
+  </div>
+
+  <a class="github-fork-ribbon left-bottom" href="#" target="_blank" rel="noopener noreferrer" title="info@sedssl.lk" data-ribbon="info@sedssl.lk"></a>
+

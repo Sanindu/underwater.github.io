@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <app-nav> </app-nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater Team Members</title>
+</head>
+<body>
+  <section id="team-members">
+    <div *ngFor="let member of teamMembers" class="member-card">
+        <img [src]="member.image">
+    </div>
+</section>
+</body>
+</html>
